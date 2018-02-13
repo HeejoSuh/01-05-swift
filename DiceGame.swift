@@ -38,10 +38,10 @@ while true {
 	print("Guess the number: ")
     input = readLine(strippingNewline: true)
 	//check if input is a number
-	if let input = Int(input!), input != nil {
-		if input>=1 && input<=6{
-			//if input is in right range
-			if input==diceNumber{
+	if let guessedNumber = Int(input!){
+		if guessedNumber>=1 && guessedNumber<=6{
+			//if guessedNumber is in right range
+			if guessedNumber==diceNumber{
 				//if correct guess
 				print("Correct!\nWrong tries: \(guessCount)")
 				break
