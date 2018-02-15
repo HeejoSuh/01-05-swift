@@ -17,17 +17,11 @@ var input: String?
 var guessedNumber: Int
 var guessCount: Int = 0
 
-//written by phrz
-//retrieved from https://gist.github.com/phrz/823afe778556113cbe79c6e8c87ce554
-//retrei\\ieved in Feb 2018
-func random(_ r: ClosedRange<Int>) -> Int {
-	let span = abs(r.upperBound-r.lowerBound)
-	return Int(arc4random_uniform(UInt32(span)))+r.lowerBound
-}
-//--------
+
+srand(UInt32(time(nil)))
 
 //roll the dice
-var diceNumber: Int = random(1...6)
+var diceNumber: Int = Int(random()%(6) + 1)
 //6 is the maximum and the 1 is the minimum 
 print("Dice rolled!\n");
         
