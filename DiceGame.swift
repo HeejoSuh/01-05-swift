@@ -24,7 +24,10 @@ print("Dice rolled!\n");
 
 
 
-//get snack type
+
+
+
+//get inputs and see if match
 while true {
 	print("Guess the number: ")
     input = readLine(strippingNewline: true)
@@ -39,7 +42,7 @@ while true {
 			}else{
 				//wrong guess
 				guessCount=guessCount+1
-				print("Try again with a valid number!")
+				print("Wrong! Try again!")
 			}
 		}else{
 			//input is not a dice number
