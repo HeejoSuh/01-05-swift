@@ -11,20 +11,17 @@
 //
 import Foundation
 
-
-var individualTime: Double = 0
 var input: String?
 var guessedNumber: Int
 var guessCount: Int = 0
 
-
-srand(UInt32(time(nil)))
-
+//--------
 //roll the dice
 var diceNumber: Int = Int(random()%(6) + 1)
 //6 is the maximum and the 1 is the minimum 
 print("Dice rolled!\n");
         
+
 
 
 //get snack type
