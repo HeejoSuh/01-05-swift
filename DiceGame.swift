@@ -17,6 +17,7 @@ var guessCount: Int = 0
 
 //--------
 //roll the dice
+srand(UInt32(time(nil))) //need this to mix up and actually get random numbers!
 var diceNumber: Int = Int(random()%(6) + 1)
 //6 is the maximum and the 1 is the minimum 
 print("Dice rolled!\n");
